@@ -27,3 +27,35 @@ A UI test automation framework built using **Playwright and TypeScript**, demons
 ├── playwright.config.ts
 ├── package.json
 └── README.
+
+## Current Features
+
+- Playwright UI automation
+- TypeScript
+- Page Object Model (POM)
+- Custom Playwright fixtures
+- Reusable page methods and locators
+- Playwright assertions
+- HTML test reporting
+- Parallel test execution
+- GitHub Actions CI/CD
+
+
+Running the Tests
+Install dependencies:
+
+npm install
+
+Run all tests:
+npx playwright test
+
+View the HTML report:
+npx playwright show-report
+
+## Project Status
+
+This is an actively developing automation framework. Additional capabilities including test data management, API testing, reusable utilities, and advanced reporting will be added progressively.
+
+Author
+Anjali Singh
+Senior QA Automation Engineer | SDET
