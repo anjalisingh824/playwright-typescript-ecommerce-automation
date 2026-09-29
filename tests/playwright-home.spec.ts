@@ -1,12 +1,9 @@
-import { test, expect } from '@playwright/test';
-import { PlaywrightHomePage } from '../pages/PlaywrightHomePage';
+import { test, expect } from '../fixtures/testFixtures';
 
-test('Verify Playwright Get Started navigation', async ({ page }) => {
-
-    const homePage = new PlaywrightHomePage(page);
+test('Verify Playwright Get Started navigation', async ({ homePage }) => {
 
     await homePage.navigate();
     await homePage.clickGetStarted();
 
-    await expect(page).toHaveURL(/.*intro/);
+    await expect(homePage.page).toHaveURL(/.*intro/);
 });
